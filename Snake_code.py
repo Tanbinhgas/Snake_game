@@ -363,7 +363,7 @@ def draw_snake(snake_list):
     head_dir = get_dir(snake_list[-2], snake_list[-1])
     screen.blit(head[head_dir], (int(hx), int(hy)))
 
-# Hiệu ứng phồng rắn khi ăn
+# Hiển thị tin nhắn
 def message(msg, color, y_offset=0, font_used=font_medium):
     mesg = font_used.render(msg, True, color)
     text_rect = mesg.get_rect(center=(width / 2, height / 2 + y_offset))

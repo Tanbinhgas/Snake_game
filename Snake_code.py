@@ -310,7 +310,7 @@ def score_display(score):
     value = font_medium.render("Điểm: " + str(score), True, white)
     screen.blit(value, [2, 550])
 
-# Lấy hướng giữa 2 điểm (nhận list/tuple int)
+# Lấy hướng giữa 2 điểm
 def get_dir(a, b):
     ax, ay = int(a[0]), int(a[1]); bx, by = int(b[0]), int(b[1])
     if ax < bx: return "RIGHT"
@@ -319,7 +319,7 @@ def get_dir(a, b):
     if ay > by: return "UP"
     return "RIGHT"
 
-# Vẽ con rắn (nhận snake_list)
+# Vẽ con rắn
 def draw_snake(snake_list):
     if len(snake_list) < 2:
         return
